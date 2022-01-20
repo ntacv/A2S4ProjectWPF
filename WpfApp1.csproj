@@ -5,6 +5,8 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <PackageIcon>pixels-min.png</PackageIcon>
+    <ApplicationIcon>File\pixels.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,12 +16,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="File\pixels.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="QRCoder" Version="1.4.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="File\black.png" />
     <Resource Include="img.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="File\pixels-min.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
