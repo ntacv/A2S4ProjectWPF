@@ -29,5 +29,12 @@ namespace WpfApp1
             imageEdit.Width = e.NewValue;
 
         }
+
+        private void Return(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            MainWindow main = new MainWindow();
+            main.Show();
+        }
     }
 }

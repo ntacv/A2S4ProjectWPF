@@ -9,7 +9,7 @@
     <Grid>
         <Grid x:Name="gridIntro" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="140" Width="153">
             <Label HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="125" BorderBrush="Black" Content="A2S4 Project" FontSize="20" Background="{x:Null}"/>
-            <Button x:Name="btnLocal" Content="_Local page" Click="GoToPage" Margin="29,96,29,10"/>
+            <Button x:Name="btnLocal" Content="Image _Editor" Click="GoToPage" Margin="29,96,29,10"/>
             <Button x:Name="btnGenerate" HorizontalAlignment="Center" VerticalAlignment="Top" Height="31" Content="_Start" Width="Auto" MinWidth="50" Padding="5,1,5,1" Click="ButtonQR_Click" Margin="0,57,0,0"/>
         </Grid>
         <Grid x:Name="gridQrcode" Visibility="Hidden" HorizontalAlignment="Center">

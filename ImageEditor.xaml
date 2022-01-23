@@ -20,6 +20,7 @@
                 <Label Content="Size of the image" Height="40" Width="200"/>
                 <Slider Height="40" Width="200" />
             </WrapPanel>
+            <Button Content="_Return" Click="Return" Margin="173,400,173,10"/>
             <UniformGrid Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="40">
                 <Image x:Name="imageEdit" Source="File/black.png"/>
             </UniformGrid>
