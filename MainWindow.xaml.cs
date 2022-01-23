@@ -30,6 +30,9 @@ namespace WpfApp1
 
         public MainWindow()
         {
+
+            
+
             int nbClick1 = 0;
             InitializeComponent();
 
@@ -45,8 +48,7 @@ namespace WpfApp1
 
         private void ButtonQR_Click(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("Run");
-
+            
             gridQrcode.Visibility = Visibility.Visible;
             gridIntro.Visibility = Visibility.Hidden;
 
@@ -76,6 +78,15 @@ namespace WpfApp1
             {
                 imgOutput.Source = imgBlack;
             }else imgOutput.Source = Qrcode;
+        }
+
+        private void GoToPage(object sender, RoutedEventArgs e)
+        {
+            
+            this.Hide();
+            ImageEditor editor = new ImageEditor();
+            editor.Show();
+
         }
     }
 }
